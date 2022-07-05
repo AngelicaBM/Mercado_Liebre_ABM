@@ -1,0 +1,536 @@
+/* :root{
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #0044AA;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+    --colorNegro: #000;
+    --colorBlanco: #FFF;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* BODY---------------------------------------------------------- */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+p{
+    font-size: 12px;
+}
+
+.last-visit h3,
+.offers h3{
+    font-size: 24px;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+
+/* HEADER---------------------------------------------------------- */
+header{
+    background-color: #EAC926;
+    padding-bottom: 30px;
+}
+
+div.top-header{
+    padding: 5%;
+    /* Clase 14 - Micro desafío 3 */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Clase 14 - Micro desafío 3 */
+header figure.logo{
+    width: 50%;
+    max-width: 220px;
+}
+
+header figure.logo{
+    padding: 10px;
+}
+
+/* Clase 14 - Micro desafío 3 */
+header .form{
+    width: 50%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+header .form .input{
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px;
+    margin-bottom: 2px;
+    width: 70%;
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+}
+
+header .form .submit{
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px;
+    /* padding-left: 0px; */
+    margin-bottom: 2px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    background-color: #FFF;
+    border: 1px solid #000;
+    width: 12%;
+    /* Clase 14 - Micro desafío 3 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header nav{
+    font-size: 12px;
+    /* Clase 13 Code-review */
+    display: none;
+}
+
+header nav ul{
+    margin-bottom: 10px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    padding-right: 2px;
+}
+
+.far,
+.fas {
+    padding-left: 2px;
+}
+div.burger-menu{
+    text-align: center;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+section.banner div{
+    width: 100%;
+}
+
+section.banner div img{
+    width: 100%;
+}
+
+
+/* MAIN---------------------------------------------------------- */
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main section article{
+    background-color: #FFF;
+    margin: 10px 0;
+}
+
+main section article img{
+    width: 100%;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    /* Clase 16 - Micro desafío 1 */
+    position: relative;
+}
+
+
+article div.main-article i{
+    font-size: 16px;
+    text-align: center;
+    background-color: #FFF;
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+    border: 1px solid #39b54a;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    /* Clase 16 - Micro desafío 1 */
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    transition: all 600ms;
+}
+
+/* Clase 16 - Micro desafío 1 */
+article div.main-article i:hover{
+    transform: rotate(-90deg);
+}
+
+/* Clase 14 - Micro desafío 1 */
+.price-and-discount{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Clase 14 - Micro desafío 1 */
+.price-and-discount .price {
+    width: 28%;
+}
+
+/* Clase 14 - Micro desafío 1 */
+.price-and-discount .discount {
+    width: 45%;
+}
+
+article div.main-article h4{
+    margin-top: 20px;
+    display: none;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+/* Clase 15 - Code Review */
+/*Estilo register y login*/
+
+main h2{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+form .form-div{
+    width: 220px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+form .form-div label{
+    padding: 2px;
+}
+
+form .form-div input,
+form .form-div select{
+    /* width: 100%; */
+    padding:5px 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    resize: none; /* No se pueda modificar el tamaño del textarea no se puede */
+}
+
+form .form-buttons button{
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    align-self: center;
+    background-color: #0044AA;
+    color: white;
+    margin-left: 15px;
+}
+
+form .form-button button{
+    width: 220px;
+    font-size: 20px;
+    padding: 4px 20px;
+    border: none;
+    border-radius: 10px;
+    align-self: center;
+    background-color: #0044AA;
+    color: white;
+    justify-content: space-between;
+}
+
+/* Micro-Desafío 3 - input:focus */
+/* El selector > permite modificar a los elementos hijos directos de un contenedor padre */
+/* En este caso a todos los inputs que sean hijos directos de un contenedor .form-div*/
+form.register-form .form-div>input:focus{
+    font-weight: bold;
+}
+/* Estilos del login.html */
+form.login-form .form-div>input:focus{
+    font-weight: bold;
+}
+/* Clase 15 - Micro-Desafío 3 */
+form.login-form .form-div input::placeholder{
+    color: #666;
+    font-weight: bold;
+}
+
+/* Clase 16 - Micro desafío 2 */
+.login-form button{
+    transition: all 0.6s;
+}
+/* Clase 16 - Micro desafío 2 */
+.login-form button:hover{
+    background-color: #0331ea;
+}
+
+
+/* FOOTER---------------------------------------------------------- */
+footer{
+    background-color: #FFF;
+    padding: 35px 45px 20px;
+}
+
+footer section.first{
+    text-align: center;
+    margin-top: 5px;
+    padding: 20px;
+}
+
+footer h3 {
+    color: #666;
+    }
+
+footer h2 {
+    color: #999;
+    font-size: 12px;
+    margin: 0;
+    top: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+footer section i{
+    color: #0044AA;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer section p{
+    color: #999;
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 4px 10px 10px 10px;
+    padding: 0px;
+}
+
+
+
+/* ---------------------------------------------------------- */
+/* MEDIA QUERY PARA NAVEGACIÓN EN TABLETS */
+@media (min-width: 480px){
+  
+    main section div article{
+       /*box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
+       /* Clase 16 - Micro desafío 1 */
+        box-shadow: none;
+        transition: all 1s;
+    }
+
+    /* Clase 16 - Micro desafío 1 */
+    main section div article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    article div.main-article h4{
+        /*display: block;*/
+    /* Clase 16 - Micro desafío 1 */
+        display: none;
+    }
+
+    /* Clase 16 - Micro desafío 1 */
+    main section div article:hover h4{
+    display: block;
+    }
+
+    /* Clase 13 code-review */
+    div.burger-menu{
+        display: none;
+    }
+
+    /* Clase 13 code-review */
+    header nav {
+        display: block;
+    }
+
+    /* Clase 14 code-review */
+    header nav {
+        display: flex;
+        flex-direction:row ;
+        justify-content: space-around;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction:row ;
+        justify-content: flex-start
+    }
+
+    header nav ul a{
+        display: block;
+        padding:0px 5px ;
+    }
+
+    /* Clase 14 - Micro desafío 1 */
+    p.price{
+        min-width: 85px;
+        max-width: 85px;
+    }
+
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+    
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products article{
+        width: 45%;
+    }
+    
+    /* Clase 15 - Code Review */
+    .loginform{
+        width: 100%;
+    }
+
+    form .form-div{
+        width: 60%;
+    }
+
+    form .form-button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        }
+
+    form .form-button button{
+        width: 60%;
+    }
+
+
+}
+/* ---------------------------------------------------------- */
+/* MEDIA QUERY PARA NAVEGACION EN DESKTOP */
+@media (min-width: 960px){
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products article{
+        width: 22%;
+    }
+    /* Clase 14 code-review */
+    div.top-header{
+    padding: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    }
+    
+    header .form{
+    width: 100%;
+    max-width:500px;
+    }
+
+        /* Clase 15 - Code Review */
+    form .form-div{
+        width: 70%;
+    }
+
+    form .form-button button{
+        width: 70%;
+    }
+
+    footer {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    footer section {
+        width: 30%;
+    }
+
+    footer h2 {
+        text-align: center;
+    }
+
+    footer section i:hover{
+        color: green;
+    }
+
+
+
+}
