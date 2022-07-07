@@ -61,6 +61,7 @@ div.top-header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
 }
 
 /* Clase 14 - Micro desafío 3 */
@@ -84,15 +85,15 @@ header .form{
 }
 
 header .form .input{
-    display: inline-block;
     font-size: 12px;
-    padding: 2px;
-    margin-bottom: 2px;
-    width: 70%;
-    background-color: #FFF;
+    background-color: #fff;
     border: 1px solid #000;
-    outline: none;
     color: #666;
+    padding: 2px;
+    width: 75%;
+    max-width: 280px;
+    margin: 0;
+    text-align: left;
 }
 
 header .form .submit{
@@ -100,7 +101,6 @@ header .form .submit{
     font-size: 12px;
     padding: 2px;
     /* padding-left: 0px; */
-    margin-bottom: 2px;
     text-align: center;
     color: #000;
     font-weight: bold;
@@ -388,6 +388,15 @@ footer section p{
 /* ---------------------------------------------------------- */
 /* MEDIA QUERY PARA NAVEGACIÓN EN TABLETS */
 @media (min-width: 480px){
+
+    header figure.logo {
+        max-width: 300px;
+    }
+    
+    .form {
+    width: 45%;
+    }
+    
   
     main section div article{
        /*box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
@@ -489,15 +498,45 @@ footer section p{
         width: 22%;
     }
     /* Clase 14 code-review */
-    div.top-header{
-    padding: 2%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    header {
+        flex-direction: row;
     }
     
+    header .top-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    header figure.logo {
+        width: 30%;
+    }
+    
+     header div.top-header p {
+        width: 33%;
+        text-align: center;
+        margin: 10px;
+    }
+    
+      .logo, .form {
+        width: 33%;
+      }
+    
+    .form {
+        height: 20px;
+      }
+    
+    header .form .input {
+        height: 20px;
+        font-size: 12px;
+      }
+    
+    header .form .submit {
+        height: 20px;
+      }
+
     header .form{
     width: 100%;
     max-width:500px;

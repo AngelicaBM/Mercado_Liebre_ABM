@@ -12,5 +12,13 @@
     "express": "^4.18.1"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelicaBM/Mercado_Liebre_ABM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AngelicaBM/Mercado_Liebre_ABM/issues"
+  },
+  "homepage": "https://github.com/AngelicaBM/Mercado_Liebre_ABM#readme",
   "description": ""
 }
